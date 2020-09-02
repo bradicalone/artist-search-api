@@ -1,0 +1,44 @@
+.panel.social-panel {
+
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,0.25),0 8px 16px -8px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .social-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .fa-twitter-square, .fa-facebook-square, .fa-pager {
+        font-size: 1.6rem;
+        color: #09008e;
+
+        p {
+            color: #4c4c4c;
+        }
+    }
+
+    p {
+        font-size: .8rem;
+        align-self: end;
+        justify-self: center;
+    }
+
+    i > p {
+        font-weight: 100;
+        font-family: sans-serif !important;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .panel.social-panel {
+        display: inline;
+        text-align: center;
+
+        p {padding: 10px;}
+    }
+}

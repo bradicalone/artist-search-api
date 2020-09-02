@@ -1,0 +1,12 @@
+.content-container {
+  margin: auto;
+  max-width: 1050px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: minmax(100px, auto);
+  padding: 1em;
+}
+/*# sourceMappingURL=content.css.map */

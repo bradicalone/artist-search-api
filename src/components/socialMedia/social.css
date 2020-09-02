@@ -1,0 +1,59 @@
+.panel.social-panel {
+  -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.panel.social-panel .social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.panel.social-panel .fa-twitter-square, .panel.social-panel .fa-facebook-square, .panel.social-panel .fa-pager {
+  font-size: 1.6rem;
+  color: #09008e;
+}
+
+.panel.social-panel .fa-twitter-square p, .panel.social-panel .fa-facebook-square p, .panel.social-panel .fa-pager p {
+  color: #4c4c4c;
+}
+
+.panel.social-panel p {
+  font-size: .8rem;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.panel.social-panel i > p {
+  font-weight: 100;
+  font-family: sans-serif !important;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .panel.social-panel {
+    display: inline;
+    text-align: center;
+  }
+  .panel.social-panel p {
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=social.css.map */

@@ -1,0 +1,91 @@
+.nav-container {
+    padding: 0 20px;
+    box-shadow: 0 6px 12px -2px rgba(50,50,93,0.25),0 3px 7px -3px rgba(0,0,0,0.3);
+    margin-bottom: 1.5rem;
+    background: #fff;
+
+    nav {
+        width: 100%;
+        height: 65px;
+
+        .input-container {
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            align-items: baseline;
+
+            .wrapper {
+                display: flex;
+            }
+
+            .error-dialog {
+                display: block;
+                background: red;
+                width: 260px;
+                position: absolute;
+                right: 80px;
+                top: 63px;
+                border-radius: 5px;
+                padding: 10px;
+                transition: .5s transform cubic-bezier(0.34, 1.56, 0.64, 1);
+
+                span {
+                    position: absolute;
+                    height: 20px;
+                    width: 20px;
+                    background: red;
+                    top: -10px;
+                    left: 10px;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+        .svg-wrapper {
+            margin-right: 10px;
+        }
+        .input-group {
+            margin: 0 !important;
+            width: 400px;
+            overflow: hidden;
+            justify-content: space-between;
+            outline: none;
+
+            .form-control {
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                outline: none;
+                border-radius: 0;
+                box-shadow: none;
+
+            }
+            .btn.btn-submit {
+                border: 1px solid #bfbfff;
+                color: blue;
+                display: block;
+            }
+            input:focus {
+                box-shadow: none;
+                background: none;
+            }
+            input:focus + span.show-boarder {
+                transform: translateX(0px);
+            }
+
+
+            span.show-boarder {
+                display: block;
+                background: blue;
+                height: 25px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: calc(100% - 77px);
+                transform: translateX(-388px);;
+                height: 1px;
+                z-index: 4;
+                transition: transform 1s ease;
+            }
+        }
+    }
+}

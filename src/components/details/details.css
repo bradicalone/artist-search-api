@@ -1,0 +1,36 @@
+.panel.detail-panel, .panel.biography-panel {
+  -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.panel.biography-panel {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+.panel.biography-panel p {
+  color: #333356;
+}
+
+.panel.biography-panel .artist-biography {
+  color: #333356;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .panel.detail-panel, .panel.biography-panel {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .panel.biography-panel p {
+    font-size: .9rem;
+  }
+}
+/*# sourceMappingURL=details.css.map */

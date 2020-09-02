@@ -1,0 +1,50 @@
+html, body, body > div {
+    height: 100%;
+}
+
+body::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('../../images/music-logo-design.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+// Global classes pertaining to multiple elements 
+.panel {
+    background: #fff;
+    padding: 1rem;
+}
+
+.panel-title {
+    width: 80%;
+
+    h1 {
+        border-bottom: 1px solid #adadad;
+        line-height: 1.5;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.5rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .panel-title {
+    
+        h1 {
+            font-size: 1.4rem;
+            white-space: nowrap;
+        }
+        p {
+            font-size: .9rem;
+        }
+    }
+}
